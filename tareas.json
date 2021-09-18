@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Ciencias",
+        "estado": "terminada"
+    },
+    {
+        "titulo": "Matematicas",
+        "estado": "progreso"
+    },
+    {
+        "titulo": "Programacion",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "Ciencias",
+        "estado": "terminada"
+    }
+]
