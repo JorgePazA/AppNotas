@@ -1,6 +1,7 @@
+const { filtrarPorEstado } = require('./tareas');
 let archivoTareas = require('./tareas');
 let accion = process.argv[2];
- 
+let estado = process.argv[3] 
 
 switch(accion){
     case 'listar':
@@ -16,6 +17,10 @@ switch(accion){
         }
         archivoTareas.guardarTarea(ingreso);
         console.log('Realizado...');
+        break;
+
+    case 'filtrar':
+        console.log(filtrarPorEstado(estado));
         break;
 
     case undefined:

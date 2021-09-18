@@ -5,16 +5,15 @@ let archivoTareas = {
     leer: function () {
         return JSON.parse(fs.readFileSync(this.archivo, 'utf-8'));
     },
-    escribirJSON: function (array){
-      console.log(array);
-      //fs.writeFileSync('./tareas.json', tareaNueva, {encoding: 'utf8'});   
-    },
     guardarTarea: function (objeto){
-      const db = archivoTareas.leer();
-      this.escribirJSON(db.push(objeto));
-      console.log(db)
+      let db = archivoTareas.leer();
+      db.push(objeto);
+      fs.writeFileSync('./tareas.json', JSON.stringify(db), null, 4); 
+    },
+    filtrarPorEstado: function (estado){
+      let db = archivoTareas.leer(); 
+      return db.filter(item => item.estado == estado)
     }
-    
 }
 
 module.exports = archivoTareas;  
