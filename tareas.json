@@ -10,9 +10,5 @@
     {
         "titulo": "Programacion",
         "estado": "pendiente"
-    },
-    {
-        "titulo": "Ciencias",
-        "estado": "terminada"
     }
 ]

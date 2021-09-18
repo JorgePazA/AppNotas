@@ -1,6 +1,6 @@
 let archivoTareas = require('./tareas');
 let accion = process.argv[2];
-
+ 
 
 switch(accion){
     case 'listar':
@@ -11,7 +11,7 @@ switch(accion){
 
     case 'crear':
         let ingreso = {
-            titulo : process.argv[4],
+            titulo : process.argv[3],
             estado : 'pendiente',
         }
         archivoTareas.guardarTarea(ingreso);
