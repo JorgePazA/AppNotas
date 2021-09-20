@@ -5,10 +5,14 @@ let archivoTareas = {
     leer: function () {
         return JSON.parse(fs.readFileSync(this.archivo, 'utf-8'));
     },
+    escribirJSON: function (arNew){
+      let arrayToString = JSON.stringify(arNew, null, 4)
+      fs.writeFileSync(this.archivo, arrayToString)
+    },
     guardarTarea: function (objeto){
-      let db = archivoTareas.leer();
+      let db = this.leer();
       db.push(objeto);
-      fs.writeFileSync('./tareas.json', JSON.stringify(db), null, 4); 
+      this.escribirJSON(db);
     },
     filtrarPorEstado: function (estado){
       let db = archivoTareas.leer(); 

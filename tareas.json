@@ -1,1 +1,22 @@
-[{"titulo":"Ciencias","estado":"terminada"},{"titulo":"Sociales","estado":"progreso"},{"titulo":"Ingles","estado":"pendiente"},{"titulo":"Programacion","estado":"pendiente"}]
+[
+    {
+        "titulo": "Ciencias",
+        "estado": "terminada"
+    },
+    {
+        "titulo": "Matematicas",
+        "estado": "progreso"
+    },
+    {
+        "titulo": "Programacion",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "Programacion",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "Politica",
+        "estado": "pendiente"
+    }
+]
